@@ -48,7 +48,7 @@ class Testimonial {
 
         switch (_sex) {
             case "Male":
-                this.img = "assets/img/testimonials/testimonials-male.png";
+                this.img = "assets/img/testimonials/testimonials-male.jpeg";
                 break;
             case "Female":
                 this.img = "assets/img/testimonials/testimonials-female.png"
@@ -223,16 +223,9 @@ function displayTestimonial(testimonial) {
     testImage.setAttribute("src", testimonial.img);
     
     //Getting elements and setting them with input info
-    nameElement = document.getElementById("test-name");
-    nameElement.innerText = testimonial.name;
-
+    document.getElementById("test-name").innerText = testimonial.name;
     document.getElementById("testimonial-job").innerText = testimonial.job;
     document.getElementById("testimonial-text").innerText = testimonial.text;
-    
-    console.log(document.getElementById("test-img"));
-    console.log(document.getElementById("test-name"));
-    console.log(document.getElementById("testimonial-job"));
-    console.log(document.getElementById("testimonial-text"));
   
 }
 
